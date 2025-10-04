@@ -66,18 +66,18 @@ const Navbar = () => {
               )}
             </div>
 
-            <a href="#why-us" className="text-foreground hover:text-primary transition-colors">
+            <a href="/#why-us" className="text-foreground hover:text-primary transition-colors">
               Why Us
             </a>
-            <a href="#pricing" className="text-foreground hover:text-primary transition-colors">
+            <Link to="/pricing" className="text-foreground hover:text-primary transition-colors">
               Pricing
-            </a>
-            <a
-              href="#free-trial"
+            </Link>
+            <Link
+              to="/free-trial"
               className="px-6 py-2 bg-gradient-to-r from-primary to-secondary rounded-full text-white font-medium hover:opacity-90 transition-opacity glow-effect"
             >
               Free Trial
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -126,26 +126,26 @@ const Navbar = () => {
               )}
             </div>
             <a
-              href="#why-us"
+              href="/#why-us"
               className="block py-2 text-foreground hover:text-primary transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Why Us
             </a>
-            <a
-              href="#pricing"
+            <Link
+              to="/pricing"
               className="block py-2 text-foreground hover:text-primary transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Pricing
-            </a>
-            <a
-              href="#free-trial"
+            </Link>
+            <Link
+              to="/free-trial"
               className="block py-2 text-foreground hover:text-primary transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Free Trial
-            </a>
+            </Link>
           </div>
         )}
       </div>

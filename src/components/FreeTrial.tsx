@@ -1,6 +1,6 @@
 import { Button } from "./ui/button";
-import { Input } from "./ui/input";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FreeTrial = () => {
   return (
@@ -13,18 +13,13 @@ const FreeTrial = () => {
           <p className="text-xl text-white/90 mb-8">
             Get 10 images edited for free. No credit card required.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <Input
-              type="email"
-              placeholder="Enter your email"
-              className="bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-white"
-            />
-            <Button className="bg-white text-primary hover:bg-white/90 font-medium group">
+          <Link to="/free-trial">
+            <Button className="bg-white text-primary hover:bg-white/90 font-medium group text-lg px-8 py-6 h-auto">
               Start Free Trial
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-          </div>
-          <p className="text-white/70 text-sm mt-4">
+          </Link>
+          <p className="text-white/70 text-sm mt-6">
             Join 500+ satisfied customers who trust GraphicsPro
           </p>
         </div>
